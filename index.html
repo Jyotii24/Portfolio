@@ -616,7 +616,7 @@ footer {
         </div>
     </section>
 
-    <section id = "Contact">
+<!--     <section id = "Contact">
         <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
             <h2>Contact Me</h2>
             <input type="text" name="Name" placeholder="Your Name" required>
@@ -625,7 +625,17 @@ footer {
             <button type="submit">Send Message</button>
           </form>
         
+    </section> -->
+     <section id="Contact">
+      <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain" onsubmit="clearForm(event)">
+        <h2>Contact Me</h2>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
+
 
     <footer class="footer">
         <p>&copy; 2025 Jyoti Nishad. All rights reserved.</p>
