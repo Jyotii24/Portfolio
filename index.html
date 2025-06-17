@@ -627,7 +627,7 @@ footer {
         
     </section> -->
      <section id="Contact">
-      <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain" onsubmit="clearForm(event)">
+      <form class="contact-form" action="mailto:your.email@example.com" method="POST" enctype="text/plain" onsubmit="clearForm(form.reset())">
         <h2>Contact Me</h2>
         <input type="text" name="Name" placeholder="Your Name" required>
         <input type="email" name="Email" placeholder="Your Email" required>
@@ -678,10 +678,6 @@ const hamburger = document.getElementById('hamburger');
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
-     function clearForm(event) {
-        event.preventDefault(); 
-        const form = event.target.closest('form');
-        form.reset();
-      }
+     
 </script>
 </html>
