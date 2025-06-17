@@ -668,5 +668,10 @@ const hamburger = document.getElementById('hamburger');
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+     function clearForm(event) {
+        event.preventDefault(); 
+        const form = event.target.closest('form');
+        form.reset();
+      }
 </script>
 </html>
